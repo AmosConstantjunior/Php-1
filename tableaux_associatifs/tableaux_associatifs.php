@@ -10,7 +10,7 @@
     
 <?php
 
-$activites = array("Lundi"=>"Php","Mardi"=>"Javascript", "Mercredi"=>"Typescript","Jeudi"=>"Angular","Vendredi"=>"SQL","Samedi"=>"Python","Dimanche"=>"Tout");
+$activites = array("Lundi"=>"Php","Mardi"=>"Peterson", "Mercredi"=>"Typescript","Jeudi"=>"Angular","Vendredi"=>"SQL","Samedi"=>"Python","Dimanche"=>"Tout");
 
 
 //deux dimensions
@@ -36,6 +36,10 @@ var_dump(array_values($preferences));
 //tableau d'association des 3 tableaux
 $preferencesAssoc = ["Pierre"=>$pierre, "Paul"=>$paul, "Jacques"=>$jacques];
 var_dump($preferencesAssoc);
+
+ //occurences des élément
+ $perter = array_count_values($preferences);
+ var_dump($perter);
 
 
 ?>
